@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect 4</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="startscreen">
+        <div class="start"><h2>START</h2></div>
+    </div>
+    <div class="red-stack">
+        <div class="red-pile">
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+            <div class="chip red"></div>
+        </div>
+    </div>
+    <div class="field-of-play">
+        <div class="pick-container">
+            <div class="pick-column-1 pick"><h1>C</h1></div>
+            <div class="pick-column-2 pick"><h1>O</h1></div>
+            <div class="pick-column-3 pick"><h1>N</h1></div>
+            <div class="pick-column-4 pick"><h1>N</h1></div>
+            <div class="pick-column-5 pick"><h1>E</h1></div>
+            <div class="pick-column-6 pick"><h1>C</h1></div>
+            <div class="pick-column-7 pick"><h1>T</h1></div>
+        </div>
+        <div class="column-container">
+            <div id="column-1" class="columns">
+                <div id="0" class="slot circle row1"></div>
+                <div id="7" class="slot circle row2"></div>
+                <div id="14" class="slot circle row3"></div>
+                <div id="21" class="slot circle row4"></div>
+                <div id="28" class="slot circle row5"></div>
+                <div id="35" class="slot circle row6"></div>
+            </div>
+            <div id="column-2" class="columns">
+                <div id="1" class="slot circle row1"></div>
+                <div id="8" class="slot circle row2"></div>
+                <div id="15" class="slot circle row3"></div>
+                <div id="22" class="slot circle row4 logo4"></div>
+                <div id="29" class="slot circle row5"></div>
+                <div id="36" class="slot circle row6"></div>
+            </div>
+            <div id="column-3" class="columns">
+                <div id="2" class="slot circle row1"></div>
+                <div id="9" class="slot circle row2"></div>
+                <div id="16" class="slot circle row3 logo4"></div>
+                <div id="23" class="slot circle row4 logo4"></div>
+                <div id="30" class="slot circle row5"></div>
+                <div id="37" class="slot circle row6"></div>
+            </div>
+            <div id="column-4" class="columns">
+                <div id="3" class="slot circle row1"></div>
+                <div id="10" class="slot circle row2 logo4"></div>
+                <div id="17" class="slot circle row3"></div>
+                <div id="24" class="slot circle row4 logo4"></div>
+                <div id="31" class="slot circle row5"></div>
+                <div id="38" class="slot circle row6"></div>
+            </div>
+            <div id="column-5" class="columns">
+                <div id="4" class="slot circle row1 logo4"></div>
+                <div id="11" class="slot circle row2 logo4"></div>
+                <div id="18" class="slot circle row3 logo4"></div>
+                <div id="25" class="slot circle row4 logo4"></div>
+                <div id="32" class="slot circle row5 logo4"></div>
+                <div id="39" class="slot circle row6 logo4"></div>
+            </div>
+            <div id="column-6" class="columns">
+                <div id="5" class="slot circle row1"></div>
+                <div id="12" class="slot circle row2"></div>
+                <div id="19" class="slot circle row3"></div>
+                <div id="26" class="slot circle row4 logo4"></div>
+                <div id="33" class="slot circle row5"></div>
+                <div id="40" class="slot circle row6"></div>
+            </div>
+            <div id="column-7" class="columns">
+                <div id="6" class="slot circle row1"></div>
+                <div id="13" class="slot circle row2"></div>
+                <div id="20" class="slot circle row3"></div>
+                <div id="27" class="slot circle row4"></div>
+                <div id="34" class="slot circle row5"></div>
+                <div id="41" class="slot circle row6"></div>
+            </div>
+        </div>
+    </div>
+    <div class="yellow-stack">
+        <div class="yellow-pile">
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+            <div class="chip yellow"></div>
+        </div>
+    </div>
+    <div class="victory">
+        <div class="victory-chip"></div>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
