@@ -1,7 +1,7 @@
 # Connect 4
 
 ## Challenge
-Challenge received early on in the SPICED bootcamp to re-create Connect 4
+Challenge received early on at SPICED Academy to re-create Connect 4
 
 ## Solution
 http://connectfour.surge.sh/
