@@ -1,7 +1,7 @@
 # Connect 4
 
 ## Challenge
-Exercise early on in the SPICED bootcamp to create Connect 4 in JavaScript in 3 days
+Challenge received early on in the SPICED bootcamp to re-create Connect 4
 
 ## Solution
 
